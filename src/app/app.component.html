@@ -2,5 +2,16 @@
 
 <h2>Draggable Directive</h2>
 
-<div class="box" appDraggable>Box1</div>
-<div class="box">Box2</div>
+<div class="box" 
+  appDraggable
+  (dragStart)="onDragStart()"
+  (dragMove)="onDragMove($event)"
+  (dragEnd)="onDragEnd()"
+>Box1</div>
+
+<div class="box" 
+  appDraggable
+  (dragStart)="onDragStart()"
+  (dragMove)="onDragMove($event)"
+  (dragEnd)="onDragEnd()"
+>Box2</div>
